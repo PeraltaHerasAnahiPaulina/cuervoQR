@@ -77,7 +77,7 @@ const EditPerfil = ({navigation }) =>{
 
                 <View style={{ paddingHorizontal: 30, flexDirection: 'row' }} >
                 <TouchableOpacity style={styles.commandButton} onPress={() => navigation.navigate('MenuDrawer')}>
-                    <Text style={styles.panelButtonTitle}>Realizar cambio</Text>
+                    <Text style={styles.panelButtonTitle}>Realizar cambios</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.commandButto}

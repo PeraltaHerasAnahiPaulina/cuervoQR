@@ -1,5 +1,5 @@
 //rafc
-import { View, Text, SafeAreaView, ImageBackground, TouchableOpacity  } from 'react-native'
+import { View, Text,  ImageBackground  } from 'react-native'
 import React from 'react'
  const QrScreen = () => {
   return (

@@ -25,10 +25,13 @@ const LoginScreen = ({ navigation }) => {
           style={styles.title2}>{'\n'} {'\n'}{'\n'}Iniciar seguro{'\n'} {'\n'}</Text>
 
         <View style={styles.log}>
-                    <Icon style={{ marginRight: 5 }} name='mail-outline' style={styles.icons} />
-                    <TextInput style={{ flex: 1, paddingVertical: 0 }} placeholder="Email" keyboardType="email-addres" />
+                    <Icon style={{ marginRight: 5 }} name='mail-outline' style= {styles.icons}/>
+                    <TextInput style={{ flex: 2 }} placeholder="Email" keyboardType="email-addres" />
 
                 </View>
+                
+
+
                 <View style={styles.log}>
                     <Icon style={{ marginRight: 5 }} name='lock-closed-outline' style={styles.icons}/>
                     <TextInput style={{ flex: 1, paddingVertical: 0 }} placeholder="Contraseña" secureTextEntry={true} />
@@ -45,8 +48,8 @@ const LoginScreen = ({ navigation }) => {
             Iniciar Sesión
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('')}>
-            <Text style={styles.admin}>{'\n'}¿Olvidaste contraseña?{'\n'}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('OlvidasteContraseña')}>
+            <Text style={styles.olviconta}>{'\n'}¿Olvidaste contraseña?{'\n'}</Text>
         </TouchableOpacity>
         
 
@@ -59,9 +62,9 @@ const LoginScreen = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Adminitrador')}>
             <Text style={styles.admin}>
-            {'\n'}{'\n'}{'\n'}{'\n'} Administrador </Text>
+            {'\n'}{'\n'}{'\n'}-Administrador- </Text>
 
         </TouchableOpacity>
         
@@ -126,6 +129,13 @@ log: {
                 fontWeight: '900',
                 fontSize: 16,
                 color: '#349B38'
+
+  },
+  olviconta: {
+    textAlign: 'center',
+                fontWeight: '900',
+                fontSize: 16,
+                color: '#1A64F7'
 
   }
 });
